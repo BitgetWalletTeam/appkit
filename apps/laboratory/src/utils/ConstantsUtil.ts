@@ -162,29 +162,8 @@ export const ConstantsUtil = {
     AppKitNetwork,
     ...AppKitNetwork[]
   ],
-  EvmWalletButtons: [
-    'bitget',
-    // 'walletConnect',
-    // 'metamask',
-    // 'trust',
-    // 'coinbase',
-    // 'rainbow',
-    // 'phantom'
-  ] as Wallet[],
-  SolanaWalletButtons: [
-    'bitget',
-    // 'walletConnect',
-    // 'metamask',
-    // 'trust',
-    // 'coinbase',
-    // 'jupiter',
-    // 'solflare',
-    // 'phantom',
-    // 'coin98',
-    // 'magic-eden',
-    // 'backpack',
-    // 'frontier'
-  ] as Wallet[],
+  EvmWalletButtons: ['bitget'] as Wallet[],
+  SolanaWalletButtons: ['bitget'] as Wallet[],
   BitcoinWalletButtons: ['walletConnect', 'xverse', 'leather', 'okx', 'phantom'] as Wallet[],
   Socials: [
     'google',
