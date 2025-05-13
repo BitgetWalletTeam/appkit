@@ -1,61 +1,36 @@
-> [!NOTE]
-> Looking for Web3modal v[1-5]? [switch the branch](https://github.com/WalletConnect/web3modal/tree/V5).
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-#### 📚 [Documentation](https://docs.reown.com/appkit/overview)
+## Getting Started
 
-#### 🧪 [Laboratory](https://appkit-lab.reown.com)
+First, run the development server:
 
-#### 🔗 [Website](https://reown.com/appkit)
-
-# AppKit
-
-Your on-ramp to web3 multichain. AppKit is a versatile library that makes it super easy to connect users with your Dapp and start interacting with the blockchain.
-
-<p align="center">
-  <img src="./.github/assets/header.png" alt="" border="0">
-</p>
-
-# Dev setup
-
-1. Create `apps/laboratory/.env.local` file using the template from `apps/laboratory/.env.example`
-
-2. In each of the `examples` create `.env.local` file with following contents
-
-```zsh
-VITE_PROJECT_ID="your_project_id"
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
 ```
 
-3. Run `pnpm watch` to build and watch for file changes in a separate tab
-4. Run gallery, laboratory or examples in a separate tab i.e. `pnpm laboratory`
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-# Releasing new versions
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-### Enter prelease mode [Optional]
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-If you need to release a canary/alpha/beta you need to enter prelease mode first
+## Learn More
 
-```sh
-pnpm changeset:pre <release tag>
-```
+To learn more about Next.js, take a look at the following resources:
 
-For example: `pnpm changeset:pre a123bas2`
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-### Generate changeset
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-If you need to release a canary/alpha/beta you need to enter prelease mode first
+## Deploy on Vercel
 
-```sh
-pnpm changeset
-```
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-### Steps
-
-1. Run `pnpm update` and update dependencies
-2. Run `pnpm install` and verify if everything still works correctly
-3. Merge your feature branch into `main`
-4. Changesets action will create or update a release PR
-5. When such PR is merged, it will trigger an automatic deploy to npm and publish release on github
-
-### Running tests
-
-See <app/laboratory/tests/README.md>
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.

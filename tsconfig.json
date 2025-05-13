@@ -1,30 +1,28 @@
 {
   "compilerOptions": {
-    "target": "ES2021",
-    "lib": ["DOM", "DOM.Iterable", "ESNext"],
-    "module": "ESNext",
+    "target": "ES2017",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
     "skipLibCheck": true,
     "strict": true,
-    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
     "esModuleInterop": true,
-    "moduleResolution": "Bundler",
-    "experimentalDecorators": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
     "resolveJsonModule": true,
-    "removeComments": true,
     "isolatedModules": true,
-    "allowJs": false,
-    "allowSyntheticDefaultImports": true,
-    "allowUnreachableCode": false,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "noImplicitReturns": true,
-    "noImplicitOverride": true,
-    "noFallthroughCasesInSwitch": true,
-    "noPropertyAccessFromIndexSignature": true,
-    "noUncheckedIndexedAccess": true,
-    "verbatimModuleSyntax": true,
-    "sourceMap": true,
-    "incremental": true
+    "jsx": "preserve",
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "paths": {
+      "@/*": ["./src/*"],
+      "@/src": ["./src/*"]
+    }
   },
-  "exclude": ["node_modules", "dist", "types", "out", ".next", ".turbo", "coverage", "package.json"]
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "exclude": ["node_modules"]
 }
